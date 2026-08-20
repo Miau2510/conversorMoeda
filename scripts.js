@@ -14,19 +14,18 @@ let reais, moeda, moedaEstrangeira = 0.00;
 const input = document.getElementById("real");
 const select = document.getElementById("moedaEs");
 
-
 function converte() {
     reais = document.getElementById("real").value;
     moeda = document.getElementById("moedaEs").value;
 
     moedaEstrangeira = 0.00;
 
-    if (moeda in moedas) {
+    if (moedas[moeda]) {
         moedaEstrangeira = (reais / moedas[moeda]).toFixed(2);
     }
 
     document.getElementById("moedaE").value = moedaEstrangeira
 }
-input.addEventListener("input", converte)
 
+input.addEventListener("input", converte)
 select.addEventListener("change", converte)
