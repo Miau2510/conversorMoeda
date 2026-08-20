@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div id="texto">
+            <h2>Conversor de Moedas</h2>
+            <p>Selecione uma moeda para converter do Real para a moeda selecionada</p>
+        </div>
+        <div id="conversor">
+            <div class="moedas">
+                BRL:
+                <input type="number" id="real">
+            </div>
+            <div class="moedas">
+                USD:
+                <input type="number" id="moedaE" readonly>
+            </div>
+        </div>
+        <button id="converter" onclick="converte()">Converter</button>
+
+        <script src="scripts.js"></script>
+    </section>
+</body>
+
+</html>
