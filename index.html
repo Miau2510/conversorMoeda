@@ -16,12 +16,31 @@
         </div>
         <div id="conversor">
             <div class="moedas">
-                BRL:
+                BRL (Real Brasileiro):
                 <input type="number" id="real">
             </div>
             <div class="moedas">
-                USD:
+
+                <label>
+                    
+                    <select name="moedaEs" id="moedaEs">
+                        
+                        <option value="">Selecione uma moeda...</option>
+                        <option value="USD">USD (Dólar Americano)</option>
+                        <option value="EUR">EUR (Euro)</option>
+                        <option value="GBP">GBP (Libra Esterlina)</option>
+                        <option value="JPY">JPY (Iene Japonês)</option>
+                        <option value="ARS">ARS (Peso Argentino)</option>
+                        <option value="CNY">CNY (Yuan Chinês)</option>
+                        <option value="CAD">CAD (Dólar Canadense)</option>
+                        <option value="AUD">AUD (Dólar Australiano)</option>
+                    
+                    </select>
+                
+                </label>
+                
                 <input type="number" id="moedaE" readonly>
+            
             </div>
         </div>
         <button id="converter" onclick="converte()">Converter</button>

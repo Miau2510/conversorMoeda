@@ -26,8 +26,10 @@ input[type="number"] {
 /* ------------------------------------------------------------------------------------------------------------------------------------ */
 #conversor {
     display: flex;
-    margin-left: 50%;
-    transform: translateX(-25%);
+    justify-content: center;
+    gap: 5%;
+    margin-top: 7.5%;
+    margin-bottom: 10%;
 }
 
 #texto {
@@ -84,4 +86,27 @@ button:active {
     background-color: rgba(43, 179, 133, 0.75);
     transform: scale(98%);
     opacity: 60%;
+}
+
+input {
+    margin-left: 15px;
+    outline: 1px solid black;
+    border-radius: 15px;
+    
+    text-align: center;
+    font-size: 17.5px;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+
+select {
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 2.5px;
+    border-radius: 15px;
+    outline: 1px solid black;
+    padding-top: 8.7px;
+    padding-bottom: 8.7px;
+    text-align: center;
 }
